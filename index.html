@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/generel.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo"><img src="/billeder/logo.png" alt="logo" /></div>
+
+      <button
+        class="burger"
+        id="burgerBtn"
+        aria-label="Åbn menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="mainNav">
+        <a href="/inspiration.html">Vinder & Inspiration</a>
+        <a href="/index.html">Hvad og hvorfor?</a>
+        <a href="/index.html">Hvem er vi?</a>
+        <a href="/deltag.html" class="cta">Deltag her</a>
+      </nav>
+    </header>
+    <main>
+      <section></section>
+    </main>
+    <footer class="site-footer">
+      <div class="logo">
+        <img src="/billeder/logo.png" alt="logo" />
+        <small><img src="/billeder/eklogo.png" alt="eklogo" /></small>
+      </div>
+
+      <div class="follow">
+        <p>FØLG OS HER:</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.5 21v-7.5h2.5l.4-3H13.5V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.35C16.2 4.3 15.2 4.2 14 4.2c-2.4 0-4 1.45-4 4.15V10.5H7.5v3H10V21h3.5z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4a4.1 4.1 0 0 1-1.9.1c.5 1.6 2 2.8 3.9 2.9A8.3 8.3 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.9c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.3" cy="6.7" r="1" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="legal-links">
+        <a href="#">Love og regler</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Deltag</a>
+      </div>
+    </footer>
+    <script>
+      const burgerBtn = document.getElementById("burgerBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      burgerBtn.addEventListener("click", () => {
+        const isOpen = mainNav.classList.toggle("open");
+        burgerBtn.classList.toggle("open");
+        burgerBtn.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>
