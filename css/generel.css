@@ -1,9 +1,24 @@
+/* generel tekst */
+h1{
+  font-family: "fjalla one", sans-serif;
+  font-size: 40pt;
+  letter-spacing: 1px;
+}h2{
+  font-family: "fjalla one", sans-serif;
+  font-size: 30pt;
+  letter-spacing: 1px;}
+  h3{font-family: "fjalla one", sans-serif;
+  font-size: 20pt;
+  letter-spacing: 1px;}
+p {font-family: "inter", sans-serif;
+  font-size: 12pt;}
+  
 body {
   margin: 0;
-  font-family: "Archivo", sans-serif;
+  font-family: "fjalla one", sans-serif;
   background: #f4f4e3;
 }
-
+main{margin:20px;}
 a {
   color: #111;
   text-decoration: underline;
@@ -12,15 +27,20 @@ a {
 .logo {
   display: flex;
   flex-direction: column;
-
-  width: 170px;
+  width: 190px;
+  margin-left: -40px;
 }
 
 .logo small {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-top: 6px;
+  margin-top: 2px;
+}
+
+.logo small img {
+  width: 80px;
+   margin-left: 40px;
 }
 
 /* FOOTER  */
@@ -28,7 +48,6 @@ a {
   background: #dde458;
   padding: clamp(14px, 2.5vw, 22px) clamp(16px, 4vw, 40px);
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 16px;
@@ -42,7 +61,7 @@ a {
 /* følg os her tekst */
 .site-footer .follow p {
   margin: 0 0 10px;
-  font-family: "Anton", sans-serif;
+  font-family: "fjalla one", sans-serif;
   font-size: clamp(12px, 1.1vw, 15px);
   letter-spacing: 1px;
   white-space: nowrap;
@@ -70,7 +89,7 @@ a {
   flex-shrink: 0;
 }
 
-/* ====== HEADER (bottom cream bar with nav in the design) ====== */
+/* HEADER */
 .site-header {
   background: #f4f4e3;
   padding: clamp(12px, 2.2vw, 18px) clamp(16px, 4vw, 40px);
@@ -80,7 +99,8 @@ a {
   flex-wrap: wrap;
   row-gap: 14px;
   column-gap: clamp(16px, 3vw, 40px);
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 /* links i header  */
 .site-header nav {
@@ -93,7 +113,7 @@ a {
 
 /* links i header skrift */
 .site-header nav a {
-  font-family: "Anton", sans-serif;
+  font-family: "fjalla one", sans-serif;
   font-size: clamp(15px, 1.4vw, 20px);
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -106,7 +126,7 @@ a {
 .site-header .cta {
   background: #f27fb0;
   color: #111;
-  font-family: "Anton", sans-serif;
+  font-family: "fjalla one", sans-serif;
   font-size: clamp(15px, 1.4vw, 20px);
   text-transform: uppercase;
   text-decoration: none;
@@ -166,8 +186,8 @@ a {
     display: flex;
   }
 }
-/* Below this, stack everything vertically (true small-screen fallback) */
-@media (max-width: 560px) {
+
+@media (max-width: 500px) {
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
