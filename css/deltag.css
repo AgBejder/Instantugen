@@ -1,0 +1,283 @@
+.deltaghowto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #967ad1;
+  padding: 60px 40px;
+  gap: 40px;
+  margin: -20px;
+}
+
+.content1 {
+  /* width: 50%; */
+  max-width: 700px;
+  padding: 0;
+}
+
+.content1 h1 {
+  color: #dce368;
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+}
+
+/* bullet-punkter ud af de almindelige <p>-tags */
+.content1 p {
+  color: #dce368;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 22px;
+  padding-left: 28px;
+}
+
+/* knappen */
+.cta-deltag {
+  display: inline-block;
+  margin-top: 10px;
+  background: #f27fb0;
+  color: #111;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 28px;
+}
+.cta-deltag:hover {
+  background: #f4e3f0;
+  color: #111;
+  text-decoration: none;
+}
+.infografik {
+  display: flex;
+  place-content: center;
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.infografik img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .deltaghowto {
+    background-color: #967ad1;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content1 {
+    max-width: 100%;
+  }
+  .content1 p {
+    padding-left: 0;
+  }
+  .infografik {
+    width: 100px;
+    display: none;
+  }
+}
+
+.delinstants {
+  background: #f4f4e3;
+  padding: 60px 20px 80px;
+  text-align: center;
+  margin:-20px;
+}
+
+.delinstants h2 {
+  letter-spacing: 1px;
+  margin: 0 0 40px;
+}
+
+/* wrapper: form + billede side om side */
+.delinstants-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* form */
+.instant-form {
+  width: 100%;
+  /* max-width: 380px; */
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.field label,
+.checkbox-row label {
+  display: block;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.instant-form input[type="text"],
+.instant-form input[type="email"],
+.instant-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid #111;
+  border-radius: 24px;
+  padding: 14px 18px;
+  font-size: 14px;
+  background: #f4f4e3;
+  color: #111;
+}
+
+.instant-form textarea {
+  border-radius: 16px;
+  resize: vertical;
+  min-height: 110px;
+}
+
+.instant-form input::placeholder,
+.instant-form textarea::placeholder {
+  color: #999;
+}
+
+/* upload boks */
+.upload-box {
+  border: 2px dashed #111;
+  border-radius: 6px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.upload-btn {
+  background: #e9e9d3;
+  border: 1px solid #111;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.upload-box p {
+  margin: 0;
+  font-size: 13px;
+  color: #444;
+}
+
+/* checkbox */
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.checkbox-row label {
+  margin: 0;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 13px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.checkbox-row a {
+  font-weight: 700;
+}
+
+/* submit-knap */
+.cta-indsend {
+  align-self: center;
+  background: #f27fb0;
+  border: none;
+  color: #111;
+  font-family: "fjalla one", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* billedet ved siden af formularen */
+.formular-billede {
+  flex-shrink: 0;
+  max-width: 350px;
+}
+
+.formular-billede img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* mobil: stak i stedet for side om side */
+@media (max-width: 768px) {
+  .delinstants-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .formular-billede img {
+    display: none;
+  }
+}
+.terms-link {
+  color: #111;
+  text-decoration: underline;
+  font-size: 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "fjalla one", sans-serif;
+}
+
+.terms-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.terms-modal.open {
+  display: flex;
+}
+
+.terms-modal-content {
+  background: #f4f4e3;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 40px 30px;
+  position: relative;
+}
+
+.terms-modal-content h2 {
+  margin-top: 0;
+}
+
+.terms-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+}
