@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deltag</title>
          <link rel="stylesheet" href="css/generel.css" />
+         <link rel="stylesheet" href="css/deltag.css" />
     <style>
       
      @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fjalla+One&display=swap");</style>
@@ -32,15 +33,97 @@
       </nav>
     </header>
     <main>
-      <section></section>
-    </main>
-    <footer class="site-footer">
-      <div class="logo">
-        <img src="/billeder/logo.png" alt="logo" />
-        <small><img src="/billeder/eklogo.png" alt="eklogo" /></small>
+      <section class="deltaghowto">
+        <div class="content1"><h1>SÅDAN DELTAGER DU</h1>
+        <p>Tag et billede af dit instant foto med din smartphone (eller scan det for den bedste kvalitet) - filen skal være mellem 2-10 MB, i jpg/jpeg- eller webp-format.</p>
+        <p>Upload dit billede og dit navn + kontaktinfo på [link til din “del dine instants”-side]</p>
+        <p>Accepter vilkår og betingelser for konkurrencen [link til afsnittet “vilkår og betingelser” på siden “del dine instants”. Den korte version: Deltagere skal være over 18 år, portrætterede personer skal have givet samtykke, og du accepterer, at dit instant foto må udstilles og bruges til at promovere fotokonkurrencen.</p>
+        <p>Du kan indsende op til 5 bidrag - gennemgå trin 1-3 for hver indsendelse</p><a href="#" class="cta-deltag">Udfyld formular</a></div>
+        <div class="infografik"><img src="/billeder/infografik.png" alt="infografik" /></div>
+      </section>
+    <div class="instants-wrap">
+  <div class="instants-grid">
+
+    <section class="delinstants">
+  <h2>Del dine instants</h2>
+
+  <div class="delinstants-wrap">
+    <form class="instant-form" id="instantsForm">
+      <div class="field">
+        <label for="fullName">Fulde navn</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Udfyld her" required>
       </div>
 
-      <div class="follow">
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Udfyld her" required>
+      </div>
+
+      <div class="field">
+        <label for="fileInput">Upload billede</label>
+        <div class="upload-box" id="uploadBox">
+          <label class="upload-btn" for="fileInput">Tilføj fil</label>
+          <input type="file" id="fileInput" name="fileInput" accept="image/*">
+          <p id="uploadHint">Vælg en fil, eller træk og slip den her</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="instantTitle">Titel på din instant</label>
+        <input type="text" id="instantTitle" name="instantTitle" placeholder="Udfyld her">
+      </div>
+
+      <div class="field">
+        <label for="instantDescription">Beskrivelsen eller historien bag dit instant</label>
+        <textarea id="instantDescription" name="instantDescription" placeholder="Udfyld her"></textarea>
+      </div>
+
+<div class="checkbox-row">
+  <input type="checkbox" id="terms" name="terms" required>
+  <label for="terms">Jeg har læst og accepteret <button type="button" class="terms-link" id="openTerms">vilkår og betingelser</button></label>
+</div>
+
+      <button type="submit" class="cta-indsend">Indsend instant</button>
+    </form>
+
+    <div class="formular-billede">
+      <img src="/billeder/formularpic1.png" alt="Stak af polaroidbilleder">
+    </div>
+  </div>
+  <div class="terms-modal" id="termsModal">
+  <div class="terms-modal-content">
+    <button class="terms-modal-close" id="closeTerms" aria-label="Luk">&times;</button>
+    <h2>Vilkår og betingelser</h2>
+   
+   <p>Deltagelse</p>
+      <p>Deltagere skal være over 18 år, portrætterede personer skal have givet samtykke,
+      og du accepterer, at dit instant foto må udstilles og bruges til at promovere fotokonkurrencen.
+    </p>
+    </strong><p>Instant foto</p>
+    <p>Hver indsendelse skal være et analogt instant-foto - ikke en digital montage lavet i et fotoredigeringsprogram. Instant-fotoet kan laves på forskellige måder; med analoge instant-kameraer, digitale instant-kameraer som f.eks. Fujifilm EVO eller scan-og-print-udstyr som f.eks. Polaroid Lab. Instant-fotoet må gerne manipuleres med analoge processer - arrangørerne opfordrer til at eksperimentere med instant fotografering. Indsendelsen kan skildre instant-fotoet på mange måder: Som en flad scanning med eller uden instant-rammen, som et foto, der viser instantet i en ramme, på væggen osv. Instant-fotoet behøver ikke kun at være ét foto: Det kan være et panorama eller en collage af flere instants, der udgør én indsendelse. Så der er en vis kunstnerisk frihed</p>   
+ <h3>Samtykke</h3>
+ <p>Det er ikke tilladt at uploade fotografier af personer, der ikke har givet samtykke til offentliggørelsen af ​​billedet. Billeder af personer i private eller pinlige situationer, uanset om de er fotograferet på et offentligt sted, er ikke tilladt.
+</p><h3>Juridiske aspekter</h3>
+<p>Arrangørerne forbeholder sig retten til at diskvalificere enhver deltager, der overtræder disse betingelser. Arrangørerne påtager sig intet ansvar for tab, skade eller personskade, der måtte opstå som følge af deltagelse i konkurrencen eller brug af præmier. Deltagerne fritager arrangørerne for ethvert krav, søgsmål eller ansvar i forbindelse med deres deltagelse i konkurrencen.</p>
+ <h3>Antal bidrag</h3>
+ <p>Du kan deltage i konkurrencen med i alt fem bidrag.</p>
+<h3>Brugsrettigheder</h3><p>Ved at indsende et eller flere billeder og dermed deltage i konkurrencen accepterer du, at billedet må bruges til promovering af fotokonkurrencen og muligvis i fysiske udstillingslokaler bagefter. Arrangørerne vil kreditere deltagerne, hvor det er praktisk og rimeligt muligt.</p></div>
+<h3>
+Ophavsret</h3><p>Du skal være fotografen af de indsendte instant fotos samt have rettighederne til at offentliggøre dem. Billederne skal være fri for tredjepartsrettigheder. Som deltager beholder du ophavsretten til de indsendte fotos. Ved at indsende fotos til konkurrencen giver du arrangørerne en ikke-eksklusiv licens til at bruge, reproducere og offentliggøre de indsendte fotos i forbindelse med promoveringen af ​​konkurrencen, herunder på sociale medieplatforme, hjemmesider og i trykte materialer. Arrangørerne vil kreditere deltagerne, hvor det er praktisk og rimeligt.
+</p><h3>Annoncering af vinderne</h3>
+<p>Vinderne af konkurrencen vil blive annonceret på Instant Ugens officielle hjemmeside og/eller sociale medieplatforme. Ved at deltage i konkurrencen giver du samtykke til offentliggørelse af navn samt at indsendte fotos bruges til markedsføring af konkurrencen.</p></div>
+</section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="logo">
+    <img src="/billeder/logo.png" alt="logo" />
+    <small><img src="/billeder/eklogo.png" alt="eklogo" /></small>
+  </div>
+
+<div class="follow">
         <p>FØLG OS HER:</p>
         <div class="social-icons">
           <a href="#" aria-label="Facebook">
@@ -72,12 +155,12 @@
         </div>
       </div>
 
-      <div class="legal-links">
-        <a href="#">Love og regler</a>
-        <a href="#">Kontakt</a>
-        <a href="#">Deltag</a>
-      </div>
-    </footer>
+  <div class="legal-links">
+    <a href="#">Love og regler</a>
+    <a href="#">Kontakt</a>
+    <a href="#">Deltag</a>
+  </div>
+</footer>
     <script>
       const burgerBtn = document.getElementById("burgerBtn");
       const mainNav = document.getElementById("mainNav");
@@ -87,6 +170,25 @@
         burgerBtn.classList.toggle("open");
         burgerBtn.setAttribute("aria-expanded", isOpen);
       });
+      const termsModal = document.getElementById("termsModal");
+const openTerms = document.getElementById("openTerms");
+const closeTerms = document.getElementById("closeTerms");
+
+openTerms.addEventListener("click", () => {
+  termsModal.classList.add("open");
+});
+
+closeTerms.addEventListener("click", () => {
+  termsModal.classList.remove("open");
+});
+
+// Luk hvis man klikker udenfor selve boksen
+termsModal.addEventListener("click", (e) => {
+  if (e.target === termsModal) {
+    termsModal.classList.remove("open");
+  }
+});
     </script>
+    
 </body>
 </html>
