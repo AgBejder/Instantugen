@@ -1,0 +1,505 @@
+/***** FONTS *****/
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  justify-self: center;
+  padding-top: 1rem;
+}
+
+/***** OTHER *****/
+
+button {
+  background: #f27fb0;
+  color: #111;
+  font-family: "fjalla one", sans-serif;
+  font-size: clamp(15px, 1.4vw, 20px);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: clamp(10px, 1.4vw, 14px) clamp(18px, 2.4vw, 28px);
+  border: none;
+}
+
+.billedehero {
+  width: 350px;
+  justify-items: center;
+}
+
+.VindBillede,
+.rammerbillede {
+  width: 300px;
+}
+
+.Factbillede1,
+.Factbillede3,
+.Factbillede4,
+.Factbillede5 {
+  width: 170px;
+  padding-bottom: 1rem;
+}
+
+.Factbillede2 {
+  width: 120px;
+}
+
+.dommer1,
+.dommer2 {
+  width: 280px;
+}
+
+.eye1,
+.eye2 {
+  width: 70px;
+}
+
+.billedeøverst {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 2rem;
+}
+
+.dommer2 {
+  align-items: end;
+  padding-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.sponsor2,
+.sponsor3,
+.sponsor4 {
+  width: 80px;
+  padding: 0.5rem;
+}
+
+.sponsor1 {
+  width: 50px;
+}
+
+.sponsorsgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/****** BACKGROUND COLORS ******/
+
+.Fact1 {
+  background-color: #dce368;
+}
+
+.Fact3 {
+  background-color: #967ad1;
+}
+
+.Fact5 {
+  background-color: #dce368;
+}
+
+.deldineinstants {
+  background-color: #967ad1;
+}
+
+.dommer {
+  background-color: #967ad1;
+}
+
+.Fact1,
+.Fact3,
+.Fact5,
+.deldineinstants,
+.dommer {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.fact1text,
+.fact3text,
+.fact5text {
+  margin: 20px;
+  padding-top: 1.5rem;
+}
+
+.ptekst1 {
+  margin: 20px;
+}
+
+.Factbillede1,
+.Factbillede2,
+.Factbillede3,
+.Factbillede4,
+.Factbillede5,
+.VindBillede,
+.rammerbillede {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsor3 {
+  position: relative;
+  top: -19px;
+}
+
+.sponsor4 {
+  position: relative;
+  bottom: -6px;
+}
+
+.delh2,
+.ptekstgreen,
+.dommerh2 {
+  color: #dce368;
+}
+
+.delh2 {
+  padding-top: 3rem;
+}
+
+.VindBillede {
+  padding-bottom: 2rem;
+}
+
+.Factbillede2,
+.Factbillede4 {
+  padding-bottom: 1rem;
+}
+
+.Factbillede1,
+.Factbillede3,
+.Factbillede5 {
+  padding-bottom: 2rem;
+}
+
+.fact1text,
+.fact3text,
+.fact5text {
+  padding-top: 2rem;
+}
+
+.fact4text,
+.fact2text {
+  padding-top: 1rem;
+}
+
+.symbol1,
+.symbol2 {
+  width: 80px;
+  position: absolute;
+}
+
+.heroBillede {
+  position: relative;
+}
+
+.symbol1 {
+  width: 60px;
+  top: 150px;
+  left: 290px;
+}
+
+.symbol2 {
+  width: 60px;
+  top: 300px;
+  right: 280px;
+}
+
+/**** DESKTOP ****/
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 43pt;
+  }
+  h2 {
+    font-size: 30pt;
+  }
+  h3 {
+    font-size: 20pt;
+  }
+
+  .billedehero {
+    width: 600px;
+  }
+
+  .heroSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .datahero {
+    padding-left: 8rem;
+  }
+
+  button {
+    width: 300px;
+    font-size: 20pt;
+    margin-top: 1.5rem;
+  }
+
+  .symbol1 {
+    width: 150px;
+    top: 220px;
+    left: 480px;
+  }
+
+  .symbol2 {
+    width: 200px;
+    top: 440px;
+    right: 650px;
+  }
+
+  .deldineinstants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .deldineinstants {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .VindBillede {
+    order: 1;
+    width: 380px;
+    margin: 0;
+    padding-top: 4rem;
+  }
+
+  .textfeltdel {
+    order: 2;
+    width: 630px;
+  }
+
+  .ptekst1 {
+    width: auto;
+    margin: 20px;
+  }
+
+  .delh2 {
+    margin-left: 0;
+    padding-top: 2rem;
+    justify-self: start;
+    padding-left: 1.5rem;
+  }
+
+  .tekstfelthvorfor {
+    width: 630px;
+  }
+
+  .hvorforh2 {
+    margin-left: 0;
+    justify-self: start;
+    padding-left: 1.5rem;
+  }
+
+  .ptekst2 {
+    margin-left: 0;
+    justify-self: start;
+    padding-left: 1.5rem;
+  }
+
+  .hvorforinstants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .rammerbillede {
+    width: 380px;
+    margin: 0;
+    padding-top: 4rem;
+  }
+
+  .factsh2 {
+    justify-self: start;
+    padding-left: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .Fact1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .fact1text {
+    order: 2;
+    width: 630px;
+  }
+
+  .Factbillede1 {
+    order: 1;
+    width: 260px;
+    margin: 0;
+    padding-top: 4rem;
+  }
+
+  .Fact2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .fact2text {
+    width: 630px;
+  }
+
+  .Factbillede2 {
+    width: 180px;
+    margin: 0;
+    padding-top: 4rem;
+  }
+
+  .Fact3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .fact3text {
+    order: 2;
+    width: 630px;
+  }
+
+  .Factbillede3 {
+    order: 1;
+    width: 220px;
+    margin: 0;
+    padding-top: 4rem;
+  }
+
+  .Fact4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .fact4text {
+    width: 650px;
+  }
+
+  .Factbillede4 {
+    width: 200px;
+    margin: 0;
+    padding-top: 4rem;
+  }
+
+  .Fact5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .fact5text {
+    order: 2;
+    width: 630px;
+  }
+
+  .Factbillede5 {
+    order: 1;
+    width: 240px;
+    margin: 0;
+    padding-top: 4rem;
+  }
+
+  .dommerh2 {
+    padding-top: 4rem;
+    justify-self: start;
+    padding-left: 8rem;
+    margin-bottom: 0;
+  }
+
+  .billedeøverst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 2rem;
+  }
+
+  .dommer1 {
+    width: 700px;
+  }
+
+  .dommer2 {
+    width: 700px;
+    display: block;
+    margin: 30px auto 0;
+    padding-right: 0;
+    padding-bottom: 7rem;
+  }
+
+  .eye1,
+  .eye2 {
+    width: 140px;
+  }
+
+  .sponsorh2 {
+    justify-self: start;
+    padding-left: 8rem;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .sponsorsgrid {
+    justify-items: center;
+  }
+
+  .sponsor2,
+  .sponsor3,
+  .sponsor4 {
+    width: 200px;
+    padding: 0.5rem;
+  }
+
+  .sponsor1 {
+    width: 150px;
+  }
+
+  .sponsor3 {
+    position: relative;
+    top: -50px;
+  }
+
+  .sponsor4 {
+    position: relative;
+    bottom: -10px;
+  }
+}
