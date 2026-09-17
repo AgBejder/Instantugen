@@ -39,55 +39,219 @@
       <div class="logo">
         <img src="/billeder/logo.png" alt="logo" />
         <small><img src="/billeder/eklogo.png" alt="eklogo" /></small>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forside</title>
+  <link rel="stylesheet" href="css/generel.css" />
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fjalla+One&display=swap");
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo"><img src="/billeder/logo.png" alt="logo" /></div>
+
+    <button class="burger" id="burgerBtn" aria-label="Åbn menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="mainNav">
+      <a href="/inspiration.html">Vinder & Inspiration</a>
+      <a href="/index.html">Hvad og hvorfor?</a>
+      <a href="/index.html">Hvem er vi?</a>
+      <a href="/deltag.html" class="cta">Deltag her</a>
+    </nav>
+  </header>
+  <main>
+
+    <div class="heroSection">
+
+      <div class="datahero">
+        <h1>DEL DINE INSTANS & VIND!</h1>
+        <h3>DEL I LØBET AF UGE 42</h3>
+        <button>Del Dine Instants</button>
       </div>
 
-      <div class="follow">
-        <p>FØLG OS HER:</p>
-        <div class="social-icons">
-          <a href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M13.5 21v-7.5h2.5l.4-3H13.5V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.35C16.2 4.3 15.2 4.2 14 4.2c-2.4 0-4 1.45-4 4.15V10.5H7.5v3H10V21h3.5z"
-              />
-            </svg>
-          </a>
-          <a href="#" aria-label="Twitter">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4a4.1 4.1 0 0 1-1.9.1c.5 1.6 2 2.8 3.9 2.9A8.3 8.3 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.9c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1z"
-              />
-            </svg>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="5" />
-              <circle cx="12" cy="12" r="4" />
-              <circle cx="17.3" cy="6.7" r="1" />
-            </svg>
-          </a>
+      <div class="heroBillede">
+        <img class="billedehero" src="/billeder/index_billeder/polaroids/Group 9.png" alt="polaroid">
+
+        <img class="symbol1" src="billeder/index_billeder/illustrationer/Vector-9.png" alt="star">
+        <img class="symbol2" src="billeder/index_billeder/illustrationer/Group-5.png" alt="eyes">
+      </div>
+
+    </div>
+
+    <section class="deldineinstants">
+
+      <div class="textfeltdel">
+        <h2 class="delh2">DEL DINE INSTANTS & VIND!</h2>
+        <div class="ptekst1">
+          <p class="ptekstgreen">Instant Ugen en hyldest til instant-fotografering; En opfordring til at udforske
+            instant-fotografiets glæder.
+            Instant
+            Ugen foregår to gange årligt: I påsken og efteråret.</p>
+          <p class="ptekstgreen">Så find dit Polaroid-, Instax- eller hvilket som helst andet instant-kamera, frem, og
+            vis
+            os dine instants.
+            Instant Ugen
+            er ikke rigtig en fotokonkurrence, det er mere en hyldest til god gammeldags analog instant-fotografering -
+            alle, der
+            deltager, er vindere!</p>
+          <p class="ptekstgreen">Næste Instant Uge løber af staben i uge 14 - d. 30 marts til den 6. april 2026.</p>
         </div>
       </div>
 
-      <div class="legal-links">
-        <a href="#">Love og regler</a>
-        <a href="#">Kontakt</a>
-        <a href="#">Deltag</a>
-      </div>
-    </footer>
-    <script>
-      const burgerBtn = document.getElementById("burgerBtn");
-      const mainNav = document.getElementById("mainNav");
+      <img class="VindBillede" src="billeder/index_billeder/polaroids/image 112.png" alt="">
+    </section>
 
-      burgerBtn.addEventListener("click", () => {
-        const isOpen = mainNav.classList.toggle("open");
-        burgerBtn.classList.toggle("open");
-        burgerBtn.setAttribute("aria-expanded", isOpen);
-      });
-    </script>
-  </body>
+    <section class="hvorforinstants">
+
+      <div class="tekstfelthvorfor">
+        <h2 class="hvorforh2">HVORFOR INSTANTFOTO?</h2>
+
+        <div class="ptekst2">
+          <p>Det hele startede tilbage i 1940'erne. Edwin Land fotograferede livets begivenheder, og en dag på stranden
+            med sin
+            3-årige datter, gjorde hun opmærksom på, at hun ville se billederne med det samme!</p>
+          <p>Edwin satte sig selv en stor opgave: At opfinde en film, der kunne fremkalde sig selv. Hurtigt. Et halvt
+            årti
+            senere
+            etablerede Edwin Land virksomheden Polaroid, som nu om dage nærmest er synonymt med Instant foto.</p>
+          <p>Instant foto blev til en omfattende forretning i 70'erne og 80'erne, indtil den digitale æra næsten slog
+            hele
+            branchen
+            ihjel. Nu er instant foto stærkt på vej tilbage:</p>
+          <p>Så lad os fejre livet og skabe minder :-)</p>
+        </div>
+      </div>
+
+      <img class="rammerbillede" src="billeder/index_billeder/illustrationer/Group 16.png" alt="portraits">
+
+    </section>
+
+    <h2 class="factsh2">FUN FACTS</h2>
+
+    <section class="Fact1">
+      <p class="fact1text">Polaroid gik konkurs i 2001 under vægten af den digitale revolution, men varemærket
+        overlevede og fik årtier
+        senere et
+        markant retro-comeback hos nye generationer.</p>
+      <img class="Factbillede1" src="billeder/index_billeder/illustrationer/Lag_1.png" alt="downcurve">
+    </section>
+
+    <section class="Fact2">
+      <p class="fact2text">Markedet vokser nu igen, drevet af en stærk længsel efter ægte, fysiske billeder i en tid,
+        hvor alt ellers
+        ligger glemt
+        på vores telefoner.</p>
+      <img class="Factbillede2" src="billeder/index_billeder/illustrationer/Vector-7.png" alt="grow">
+    </section>
+
+    <section class="Fact3">
+      <p class="fact3text">Flylufthavne og røntgen: Gammeldags og moderne instant-film er så lys- og strålefølsomme, at
+        lufthavnenes
+        røntgenmaskiner kan beskadige eller ødelægge filmen permanent.</p>
+      <img class="Factbillede3" src="billeder/index_billeder/illustrationer/Group.png" alt="bag">
+    </section>
+
+    <section class="Fact4">
+      <p class="fact4text">Instant-foto blev opfundet i 1948 af Edwin Land, som revolutionerede fotografiet ved at skabe
+        et kamera, der
+        kunne
+        fremkalde et færdigt papirbillede på under et minut.</p>
+      <img class="Factbillede4" src="billeder/index_billeder/illustrationer/Group-4.png" alt="head">
+    </section>
+
+    <section class="Fact5">
+      <p class="fact5text">Der blev solgt over 10 millioner instant-kameraer i 1978, hvor butikkerne oplevede et
+        historisk stormløb på de
+        populære
+        modeller.</p>
+      <img class="Factbillede5" src="billeder/index_billeder/illustrationer/Group-2.png" alt="sign">
+    </section>
+
+    <section class="dommer">
+
+      <h2 class="dommerh2">HVEM ER DOMMERNE?</h2>
+
+      <div class="billedeøverst">
+        <img class="dommer1" src="billeder/index_billeder/polaroids/Gemini_Generated_Image_t7ttq1t7ttq1t7tt 2.png"
+          alt="dommer1">
+
+        <div class="dommerillustrationer">
+          <img class="eye1" src="billeder/index_billeder/illustrationer/Vector-10.png" alt="10">
+          <img class="eye2" src="billeder/index_billeder/illustrationer/Vector-11.png" alt="11">
+        </div>
+      </div>
+
+      <img class="dommer2" src="billeder/index_billeder/polaroids/Gemini_Generated_Image_t7ttq1t7ttq1t7tt 1.png" alt="">
+
+    </section>
+
+    <h2 class="sponsorh2">SPONSORER</h2>
+
+    <div class="sponsorsgrid">
+      <img class="sponsor1" src="billeder/index_billeder/sponsorer/image 166.png" alt="sponsor">
+      <img class="sponsor2" src="billeder/index_billeder/sponsorer/image 162.png" alt="polaroid">
+      <img class="sponsor3" src="billeder/index_billeder/sponsorer/image 163.png" alt="Fuji">
+      <img class="sponsor4" src="billeder/index_billeder/sponsorer/image 165.png" alt="Prolog">
+
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <div class="logo">
+      <img src="/billeder/logo.png" alt="logo" />
+      <small><img src="/billeder/eklogo.png" alt="eklogo" /></small>
+    </div>
+
+    <div class="follow">
+      <p>FØLG OS HER:</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M13.5 21v-7.5h2.5l.4-3H13.5V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.35C16.2 4.3 15.2 4.2 14 4.2c-2.4 0-4 1.45-4 4.15V10.5H7.5v3H10V21h3.5z" />
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4a4.1 4.1 0 0 1-1.9.1c.5 1.6 2 2.8 3.9 2.9A8.3 8.3 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.9c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1z" />
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.3" cy="6.7" r="1" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="legal-links">
+      <a href="#">Love og regler</a>
+      <a href="#">Kontakt</a>
+      <a href="#">Deltag</a>
+    </div>
+  </footer>
+  <script>
+    const burgerBtn = document.getElementById("burgerBtn");
+    const mainNav = document.getElementById("mainNav");
+
+    burgerBtn.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      burgerBtn.classList.toggle("open");
+      burgerBtn.setAttribute("aria-expanded", isOpen);
+    });
+  </script>
+</body>
+
 </html>

@@ -1,24 +1,34 @@
 /* generel tekst */
-h1{
+h1 {
   font-family: "fjalla one", sans-serif;
   font-size: 40pt;
   letter-spacing: 1px;
-}h2{
+}
+h2 {
   font-family: "fjalla one", sans-serif;
   font-size: 30pt;
-  letter-spacing: 1px;}
-  h3{font-family: "fjalla one", sans-serif;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "fjalla one", sans-serif;
   font-size: 20pt;
-  letter-spacing: 1px;}
-p {font-family: "inter", sans-serif;
-  font-size: 12pt;}
-  
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "inter", sans-serif;
+  font-size: 12pt;
+}
+
 body {
   margin: 0;
   font-family: "fjalla one", sans-serif;
   background: #f4f4e3;
 }
-main{margin:20px;}
+main {
+  margin: 20px;
+}
 a {
   color: #111;
   text-decoration: underline;
@@ -40,7 +50,7 @@ a {
 
 .logo small img {
   width: 80px;
-   margin-left: 40px;
+  margin-left: 40px;
 }
 
 /* FOOTER  */
@@ -191,6 +201,8 @@ a {
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .site-footer .follow,
   .site-header .cta {
