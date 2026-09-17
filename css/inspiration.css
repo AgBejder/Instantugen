@@ -1,0 +1,302 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7e8;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* FARVER */
+
+:root {
+  --cream: #f7f7e8;
+  --purple: #9675d2;
+  --yellow: #eff45b;
+}
+
+/* VINDER */
+
+.winner {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+}
+
+.winner__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.winner__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-text {
+  color: var(--purple);
+}
+
+/* VINDER BILLEDE */
+
+.winner__image {
+  position: relative;
+  width: 100%;
+}
+
+.polaroid--winner {
+  background-color: var(--purple);
+  aspect-ratio: 463 / 556;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroid--winner img {
+  width: 88%;
+  height: 82%;
+  object-fit: cover;
+}
+/* NOMINEREDE */
+
+.nominated {
+  min-height: 66vh;
+  background-color: var(--purple);
+  h2 {
+    color: var(--yellow);
+  }
+  p {
+    color: var(--yellow);
+  }
+}
+.nominated__item {
+  display: flex;
+  align-items: center; /* Centrerer billede og tekst vertikalt i forhold til hinanden */
+  gap: 15px; /* Skaber afstand mellem billede og tekst */
+}
+.nominated__item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* BUND */
+
+.intro {
+  background-color: var(--yellow);
+}
+
+/* =====================================
+   1280 PX
+===================================== */
+
+@media (min-width: 1100px) {
+  .winner {
+    min-height: 655px;
+
+    grid-template-columns: 1fr 463px;
+    gap: 60px;
+  }
+
+  .winner h1 {
+    font-size: 3.2rem;
+  }
+
+  .winner__image {
+    width: 463px;
+  }
+
+  .intro {
+    min-height: 148px;
+  }
+}
+@media (min-width: 1100px) {
+  .winner {
+    display: grid;
+    grid-template-columns: 1fr 463px;
+  }
+}
+
+/* =========================
+   INSPIRATION
+========================= */
+
+.inspiration {
+  background-color: #9675d2;
+  color: #eff45b;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* =========================
+   OVERSKRIFT + INTRO
+========================= */
+
+.inspiration__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inspiration__intro h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.inspiration__intro p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 600px;
+}
+
+/* =========================
+   BILLEDE GRID
+========================= */
+
+.inspiration__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+/* =========================
+   HVER INSPIRATION
+========================= */
+
+.inspiration__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inspiration__item a {
+  color: #eff45b;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+
+  text-decoration: underline;
+}
+
+/* =========================
+   BILLEDER
+========================= */
+
+.photos {
+  width: 100%;
+
+  display: flex;
+  gap: 5px;
+}
+
+.photos img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* To billeder ved siden af hinanden */
+
+.photos--double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+/* To billeder under hinanden */
+
+.photos--stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+  .inspiration__grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 70px;
+  }
+}
+
+/* =========================
+   DESKTOP / 1280px
+========================= */
+
+@media (min-width: 1100px) {
+  .inspiration {
+    min-height: 100vh;
+    gap: 40px;
+  }
+
+  .inspiration__intro h2 {
+    font-size: 3rem;
+  }
+
+  .inspiration__intro p {
+    font-size: 1.1rem;
+  }
+
+  .inspiration__grid {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 120px;
+    row-gap: 70px;
+  }
+
+  /* Steve Crist + Barbara Hitchcock */
+
+  .inspiration__item--steve {
+    width: 300px;
+  }
+
+  /* Mette Kelter */
+
+  .inspiration__item--mette {
+    width: 335px;
+    justify-self: end;
+  }
+
+  /* Dan Isaac Wallin */
+
+  .inspiration__item--dan {
+    width: 420px;
+  }
+
+  /* Maripol */
+
+  .inspiration__item--maripol {
+    width: 280px;
+    justify-self: end;
+  }
+}
