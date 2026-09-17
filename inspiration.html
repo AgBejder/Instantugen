@@ -33,170 +33,110 @@
       </nav>
     </header>
 
-      <main>
-
-        <!-- HERO -->
-        <section class="winner">
-
-            <div class="winner__info">
-
-                <h1>VINDEREN AF INSTANT UGEN</h1>
-
-                <div class="winner__details">
-                    <p>
-                        <strong>TITEL:</strong>
-                        Genslag i ludo
-                    </p>
-
-                    <p>
-                        <strong>FOTOGRAF:</strong>
-                        Henning V. Sørensen
-                    </p>
-
-                    <p>
-                        <strong>HISTORIEN BAG BILLEDET:</strong><br>
-                        En regnfuld søndag eftermiddag i oktober
-                    </p>
-                </div>
-
-                <p class="scroll-text">
-                    Scroll ned for de nominerede & inspiration
-                </p>
-
-            </div>
-
-
-            <div class="winner__image">
-
-                <div>
-                    <img
-                        src="billeder/fotoVinder.jpg"
-                        alt="Barn der spiller ludo"
-                    >
-                </div>
-
-            </div>
-
-        </section>
-
- <!-- NOMINEREDE-->
- <section class="nominated">
-       
-  <h2>DE NOMINEREDE</h2>
-
-     <section class="nominated__item">
-          <div>
-            <img src="billeder/isDreng.png" alt="Nomineret 1" />
-          </div>
-
-          <div>
-            <p><strong> TITEL:</strong> Smagen af august</p>
-            <p><strong> FOTOGRAF: </strong> Teddy K. Berg</p>
-            <p><strong> HISTORIEN BAG BILLEDET: </strong>En lille dreng kæmper ivrigt mod sommervarmen ved vesterhavet,</br> mens hans flødeis smelter hurtigere,end han kan nå at spise den</p>
-          </div>
-    </section>
-
+     <main>
+    <section class="hero">
+      <h1 class="hero-title">VINDEREN AF INSTANT UGEN</h1>
+      <div class="hero-grid">
+        <dl class="hero-meta">
+          <dt>Titel</dt>
+          <dd>Genstart i ludo</dd>
+          <dt>Fotograf</dt>
+        <dd>Henning V. Sørensen</dd>
+        <dt>Historien bag billedet</dt>
+        <dd>En regnfuld søndag eftermiddag i oktober</dd>
+        <a href="#nominerede">Scroll ned for de nominerede & inspiration</a>
+      </dl>
+      <div class="hero-photo">
+        <img src="/billeder/fotoVinder.jpg" alt="Vinderbillede: en kop kaffe på et træbord, fotograferet ovenfra en regnfuld eftermiddag">
+        <!-- <div class="hero-mark">!!</div> -->
+      </div>
+    </div>
   </section>
- 
- </section>
 
-        <!-- INTRO  -->
-        <section class="intro">
+  <!-- ===== DE NOMINEREDE (karrusel) ===== -->
+  <section class="nominees" id="nominerede">
+    <div class="section-inner">
+      <h2 class="section-heading">DE NOMINEREDE</h2>
 
-            <p>
-                Instant Ugen var noget af en succes med over 300 bidrag.
-                Så det var ikke nemt at finde en vinder. Efter et par lange,
-                men spændende dage, blev dommerne enige om vinderen og
-                de 3 nominerede.
-            </p>
+      <div class="carousel">
+        <button class="car-btn" id="prevBtn" aria-label="Forrige nominerede">&#8592;</button>
 
-        </section>
-     <!-- INSPIRATION  -->
-<section class="inspiration">
+        <div class="car-stage">
+          <div class="car-photo">
+            <img id="nomImg" src="" alt="">
+          </div>
+          <dl class="car-text" id="nomText">
+            <dt>Titel</dt>
+            <dd id="nomTitle"></dd>
+            <dt>Fotograf</dt>
+            <dd id="nomPhotographer"></dd>
+            <dt>Historien bag billedet</dt>
+            <dd id="nomStory"></dd>
+          </dl>
+        </div>
 
-    <div class="inspiration__intro">
-        <h2>INSPIRATION</h2>
+        <button class="car-btn" id="nextBtn" aria-label="Næste nominerede">&#8594;</button>
+      </div>
 
-        <p>
-            Tag et kig på følgende instant fotos for inspiration.
-            Du kan også få en masse inspiration fra kunstfotografi-scenen.
-        </p>
+      <div class="car-dots" id="dots" role="tablist" aria-label="Vælg nomineret"></div>
     </div>
+  </section>
 
+  <!-- ===== BANNER ===== -->
+  <div class="banner">
+    <p>Instant Ugen var noget af en succes med over 300 bidrag. Så det var ikke nemt at finde en vinder. Efter et par lange, men spændende dage, blev dommerne enige om vinderen og de 3 nominerede.</p>
+  </div>
 
-    <div class="inspiration__grid">
+  <!-- ===== INSPIRATION ===== -->
+  <section class="inspiration">
+    <div class="section-inner">
+      <h2 class="section-heading">INSPIRATION</h2>
+      <p class="intro">Tag et kig på følgende instant fotos for inspiration. Du kan opsøge få en masse inspiration fra kunstfotografi-scenen.</p>
 
-        <!-- Steve Crist og Barbara Hitchcock -->
-        <article class="inspiration__item inspiration__item--steve">
+      <div class="insp-grid">
 
-            <div class="photos photos--stacked">
-                <img src="billeder/steve.png" alt="Gammel bil"> 
-            </div>
+        <div class="insp-item">
+          <div class="insp-photos">
+            <img src="/billeder/steve.png" alt="Landskabsfoto til inspiration">
+            <img src="/billeder/stjernesort.png" alt="Landskabsfoto til inspiration">
+          </div>
+          <p class="insp-credit"><a href="https://eksempel.dk/steve-og-barbara" target="_blank" rel="noopener">Steve Ørbst og Barbara Hitchcock</a></p>
+        </div>
 
-            <a href="#">
-                Steve Crist og Barbara Hitchcock
-            </a>
+        <div class="insp-item single">
+          <div class="insp-photos">
+            <img src="/billeder/mette.png" alt="Bybillede til inspiration">
+          </div>
+          <p class="insp-credit"><a href="https://eksempel.dk/mette-keller" target="_blank" rel="noopener">Mette Keller er en dansk kunstfotograf</a></p>
+        </div>
 
-        </article>
+        <div class="insp-item">
+          <div class="insp-mark">&#10022;</div>
+        </div>
 
+        <div class="insp-item single">
+          <div class="insp-photos">
+            <img src="/billeder/øjne.png" alt="Sort/hvid gadefoto til inspiration">
+          </div>
+        </div>
 
-        <!-- Mette Kelter -->
-        <article class="inspiration__item inspiration__item--mette">
+        <div class="insp-item">
+          <div class="insp-photos">
+            <img src="/billeder/solnedgang.png" alt="Solnedgang til inspiration">
+          </div>
+          <p class="insp-credit"><a href="https://eksempel.dk/jan-isaac-wallin" target="_blank" rel="noopener">Jan Isaac Wallin er en svensk kunstfotograf</a></p>
+        </div>
 
-            <div class="photos photos--double">
-                <img src="billeder/mette.png" alt="Bybillede">
-               
-            </div>
+        <div class="insp-item single">
+          <div class="insp-photos">
+            <img src="/billeder/Billede1.png" alt="Interiørfoto til inspiration">
+          </div>
+          <p class="insp-credit"><a href="https://eksempel.dk/marigot" target="_blank" rel="noopener">Marigot er en fransk kunstfotograf filmarbeider</a></p>
+        </div>
 
-            <a href="#">
-                Mette Kelter er en dansk kunstfotograf
-            </a>
-
-        </article>
-
-
-        <!-- Dan Isaac Wallin -->
-        <article class="inspiration__item inspiration__item--dan">
-
-            <div class="photos photos--double">
-                <img src="images/dan1.jpg" alt="Solnedgang">
-                <img src="images/dan2.jpg" alt="Landskab">
-            </div>
-
-            <a href="#">
-                Dan Isaac Wallin er en svensk kunstfotograf
-            </a>
-
-        </article>
-
-
-        <!-- Maripol -->
-        <article class="inspiration__item inspiration__item--maripol">
-
-            <div class="photos">
-                <img src="images/maripol1.jpg" alt="Gang">
-                <img src="images/maripol2.jpg" alt="Bygning">
-            </div>
-
-            <a href="#">
-                Maripol er en fransk kunstner/fotograf/filmproducer.
-            </a>
-
-        </article>
-
+      </div>
     </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
+  </section>
     </main>
 
     <footer class="site-footer">
@@ -250,7 +190,81 @@
         const isOpen = mainNav.classList.toggle("open");
         burgerBtn.classList.toggle("open");
         burgerBtn.setAttribute("aria-expanded", isOpen);
-      });
+      });  
+      // ---- Karrusel-data: byt arrayet ud med de rigtige nominerede ----
+  const nominees = [
+    {
+      title: "Stengen af august",
+      photographer: "Teddy R. Berg",
+      story: "En lille dreng kæmper ivrigt med sommervarmen ved restauranten, mens hans fødder smetter fortabt, men han kan råbe alt op i sidste øjeblik.",
+      img: "/billeder/inspirationsbilleder/isDreng.png"
+    },
+    {
+      title: "Aftenlys ved havnen",
+      photographer: "Camilla Holst",
+      story: "Sidste lys på molen, hvor fiskerbådene ligger stille og aftenen langsomt tager over fra dagen.",
+      img: "nom2.jpg"
+    },
+    {
+      title: "Vinterens ro",
+      photographer: "Anders Bruun",
+      story: "En tidlig morgen i januar, hvor sneen dæmper alle lyde og verden virker helt stille et øjeblik.",
+      img: "nom3.jpg"
+    }
+  ];
+
+  let current = 0;
+  const imgEl = document.getElementById('nomImg');
+  const titleEl = document.getElementById('nomTitle');
+  const photographerEl = document.getElementById('nomPhotographer');
+  const storyEl = document.getElementById('nomStory');
+  const textEl = document.getElementById('nomText');
+  const dotsEl = document.getElementById('dots');
+
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    nominees.forEach((_, i) => {
+      const b = document.createElement('button');
+      b.setAttribute('aria-label', 'Nomineret ' + (i+1));
+      b.setAttribute('aria-current', i === current ? 'true' : 'false');
+      b.addEventListener('click', () => showNominee(i));
+      dotsEl.appendChild(b);
+    });
+  }
+
+  function showNominee(index){
+    current = (index + nominees.length) % nominees.length;
+    const n = nominees[current];
+
+    // genstart entré-animation
+    imgEl.style.animation = 'none';
+    textEl.style.animation = 'none';
+    void imgEl.offsetWidth; // reflow for at genstarte animation
+    imgEl.style.animation = '';
+    textEl.style.animation = '';
+
+    imgEl.src = n.img;
+    imgEl.alt = 'Nomineret billede: ' + n.title;
+    titleEl.textContent = n.title;
+    photographerEl.textContent = n.photographer;
+    storyEl.textContent = n.story;
+
+    [...dotsEl.children].forEach((dot, i) => {
+      dot.setAttribute('aria-current', i === current ? 'true' : 'false');
+    });
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => showNominee(current - 1));
+  document.getElementById('nextBtn').addEventListener('click', () => showNominee(current + 1));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') showNominee(current - 1);
+    if (e.key === 'ArrowRight') showNominee(current + 1);
+  });
+
+  buildDots();
+  showNominee(0);
+  
     </script>
 </body>
 </html>
